@@ -363,6 +363,39 @@ footer span{
 .section-header:hover{
 	color: black;
 }
+/*grid layout*/
+
+.row:after{
+	content: "";
+	display: table;
+	clear: both;
+	width: 100%;
+}
+[class*="col-"]{
+	box-sizing: border-box;
+	padding: 0.5em;
+	float: left;
+}
+.col-1{
+	width: 8.333%;
+	background-color: pink;
+}
+.col-4{
+	width: 33.333%;
+	background-color: yellow;
+}
+.col-6{
+	width: 50%;
+	background-color: red;
+}
+.col-8{
+	width: 66.667%;
+	background-color: purple;
+}
+.col-12{
+	width: 100%;
+	background-color: orange;
+}
 
 @media screen and (min-device-width: 768px){
 	[class*="col-"] {
@@ -404,6 +437,7 @@ footer span{
 		color: grey;
 		clear: right;
 	}
+	
 	.b{
 		position: relative;
 		clear: initial;
@@ -413,7 +447,6 @@ footer span{
 		margin-bottom: 1.5em;
 		border: 1px solid red;
 	}
-	
 	.b img{
 		height: 12vh;
 		width: 100%;
@@ -425,5 +458,5 @@ footer span{
 		position: relative;
 		margin-top: -20px;
 	}
-	
+
 }
