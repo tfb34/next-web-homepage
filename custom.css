@@ -60,16 +60,16 @@ nav div{
 	clear: both;
 }
 /*top story*/
-[class*="col-"] {
+[class*="top-story-col-"] {
 	float:initial;	
 	padding-right: 0;
 	width: 100%;
 }
-.col-1{
+.top-story-col-1{
 	/*width: 65%;*/
 	/*padding-right: 0.5em;*/
 }
-.col-2{
+.top-story-col-2{
 	/*width: 33.5%;*/
 }
 .top-story{
@@ -306,7 +306,7 @@ nav div{
 	float: left;
 	width:30%;
 }
-#extra-info div p:first-child,a{
+#extra-info div p:first-child, #extra-info a{
 	color: #AAAAAA;
 }
 #extra-info span{
@@ -398,15 +398,15 @@ footer span{
 }
 
 @media screen and (min-device-width: 768px){
-	[class*="col-"] {
+	[class*="top-story-col-"] {
 	float:left;	
 	}
-	.col-1{
+	.top-story-col-1{
 		width: 65%;
 		padding-right: 0.5em;
 		height: 100%;
 	}
-	.col-2{
+	.top-story-col-2{
 		width: 33.5%;
 	}
 	.top-story{
