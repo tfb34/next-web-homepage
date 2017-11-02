@@ -60,6 +60,9 @@ nav div{
 	clear: both;
 }
 /*top story*/
+#top-tech #logo{
+	position: absolute; font-size: 120px; font-family: 'Monoton',Times;padding-left: 20px;font-weight: medium; color: white;visibility: hidden;
+}
 [class*="top-story-col-"] {
 	float:initial;	
 	padding-right: 0;
@@ -92,14 +95,15 @@ nav div{
 	color:white;
 }
 .text a:first-child{
-	font-size: 11px;
+	font-size: 17px;
+	font-family: 'Saira';
 }
 .title{
-	font-size: 15px;
+	font-size: 20px;
 	font-weight: bold;
 }
 .text p{
-	font-size: 10px;
+	font-size: 12px;
 	line-height: 0;
 	color: grey;
 }
@@ -386,7 +390,9 @@ footer span{
 	#top-tech{
 		height: 61vw;
 	}
-
+	#top-tech .title{
+		font-size: 30px;
+	}
 	/*latest news*/
 	#latest-news:after{
 		content: "";
@@ -480,6 +486,9 @@ footer span{
 	}
 }
 @media screen and (min-device-width: 1042px){
+	#top-tech #logo{
+		position: absolute; font-size: 120px; font-family: 'Monoton',Times;padding-left: 20px;font-weight: medium; color: white;visibility: visible;
+	}
 	[class*="top-story-col-"] {
 	float:left;	
 	}
@@ -502,7 +511,12 @@ footer span{
 		background-size: cover;
 		background-position: center;
 	}
-
+	.top-story .title{
+		font-size: 25px;
+	}
+	#top-tech .title{
+		font-size: 40px;
+	}
 	/*latest news*/
 	#latest-news:after{
 		content: "";
@@ -733,5 +747,10 @@ footer span{
 		padding: 0.5em;
 		float: left;
 		height: 30vh;
+	}
+}
+@media screen and (max-device-width: 320px){
+	.top-right{
+		padding-bottom: 1.5em;
 	}
 }
