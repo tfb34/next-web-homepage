@@ -2,6 +2,7 @@ body{
 	margin: 0 auto;
 	padding: 0;
 	font-family: sans-serif;
+	background-color: white;
 }
 .container-x{
 	padding-left: 0.5em;
@@ -14,7 +15,7 @@ body{
 	clear: both;
 }
 .container{
-	border: 1px solid blue;
+	
 	padding-bottom: 3em;
 	padding-left: 1em;
 	padding-right: 1em;
@@ -26,7 +27,8 @@ a{
 }
 /*navbar*/
 #navbar{
-	position: fixed;margin:0; padding: 0;top:0; width:100%; z-index:1;
+	position: fixed;margin:0; padding: 0;top:0; width:100%; z-index:1;visibility: visible;
+	box-shadow:  0px 10px 20px #888888;
 }
 #navbar nav{
 	background-color: white;
@@ -78,11 +80,9 @@ nav div{
 .top-story{
 	height: 50vw;
 	margin-top: 0.5em;
-	border:1px solid blue;
 	position: relative;
 }
 .text{
-	border: 1px solid green;
 	position: absolute;
 	bottom: 0;
 	left: 0.5em;
@@ -108,17 +108,37 @@ nav div{
 	color: grey;
 }
 #top-tech{
-	
+	/*Firefox 3.6 to 15*/
+	background: -moz-linear-gradient(to bottom right, rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url("assets/main-pic.jpg");
+	/*safari 5.1 to 6.0*/
+	background: -webkit-linear-gradient(to bottom right, rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url("assets/main-pic.jpg");
+	/*Opera 11.1 to 12.0*/
+	background: -o-linear-gradient(to bottom right, rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url("assets/main-pic.jpg");
+	/*Standard syntax(must be last)*/
 	background: linear-gradient(to bottom right, rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url("assets/main-pic.jpg");
 	background-size: cover;
 	background-position: center;
 }
 #top-2{
+	/*Safari 5.1 to 6.0*/
+	background: -webkit-linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9)), url("assets/second-pic.jpg");
+	/*Opera 11.1 to 12.0*/
+	background: -o-linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9)), url("assets/second-pic.jpg");
+	/*Firefox 3.6 to 15*/
+	background: -moz-linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9)), url("assets/second-pic.jpg");
+	/*Standard syntax(must be last)*/
 	background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9)), url("assets/second-pic.jpg");
 	background-size: cover;
 	background-position: center;
 }
 #top-3{
+	/*Safari 5.1 to 6.0*/
+	background: -webkit-linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9)), url("assets/third-pic.jpg");
+	/*Opera 11.1 to 12.0*/
+	background: -o-linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9)), url("assets/third-pic.jpg");
+	/*Firefox 3.6 to 15*/
+	background: -moz-linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9)), url("assets/third-pic.jpg");
+	/*Standard syntax(must be last)*/
 	background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9)), url("assets/third-pic.jpg");
 	background-size: cover;
 	background-position: center;
@@ -181,7 +201,7 @@ nav div{
 	position: absolute;top: 8em;left:1em;
 }
 #latest-funding #footer{
-	margin:0 0 0.5em 0;padding:0 0 1em 1em;border:1px solid green; margin-top: 5em;border-top: 1px solid rgb(255,205,194);
+	margin:0 0 0.5em 0;padding:0 0 1em 1em; margin-top: 5em;border-top: 1px solid rgb(255,205,194);
 }
 #latest-funding span{
 	color:rgb(172,172,172);
@@ -189,7 +209,6 @@ nav div{
 /*topics*/
 .square{
 	position:relative;
-	background: blue;
 	height:65vw;
 }
 .app .text{
@@ -205,7 +224,6 @@ nav div{
 	position: relative;
 	height: 6em;
 	color: rgb(255,68,34);
-	border:1px solid blue;
 }
 .latest .subheader{
 	position: relative;
@@ -292,7 +310,6 @@ nav div{
 /*extra info*/
 #extra-info{
 	background: #131313;
-	border:1px solid yellow;
 	padding-left: 1em;
 	padding-right: 1em;
 	padding-bottom: 3em;
@@ -321,7 +338,6 @@ nav div{
 	color: #FFFFFF;
 }
 #extra-info div:last-child{
-	border:1px solid blue;
 	margin-top: 1em;
 }
 /*footer*/
@@ -367,9 +383,86 @@ footer span{
 .section-header:hover{
 	color: black;
 }
-
+/*navbar-2*/
+.row.wrapper{
+	position: absolute;/*absolute*/
+	visibility: hidden;/*hiden*/
+}
+/*navbar*/
 
 @media screen and (min-device-width: 768px){
+
+	/*navbar2*/
+	#navbar{
+		position: absolute;visibility: hidden;
+	}
+    ul{
+		margin:0;padding:0;list-style-type: none;
+	}
+	#top li{
+		display: inline;
+		padding: 2px;
+		font-size: 13px;
+	}
+	#bottom li{
+		display: inline;
+	}
+	#bottom .left li{
+		padding:0.5em;
+		font-size: 12px;
+	}
+	#navbar-2 a{
+		color: #B2B2B2;
+		text-decoration: none;
+	}
+	#bottom .left a:hover{
+		color: black;
+	}
+	#top a:hover{
+		color: white;
+	}
+	.right{
+		float: right;
+	}
+	.left{
+		float: left;
+	}
+	#bottom .right li{
+		margin-right: 12px;
+	}
+
+	#top{
+		background-color: black;
+		padding: 0.5em;
+	}
+	#bottom{
+		background-color: white;
+		padding: 1em;
+		z-index: 1;
+
+	}
+	.row:after{
+		content:"";
+		display: table;
+		clear: both;
+	}
+	#navbar2-logo{
+		width:13%;height:5.5em;background-size: cover; background-position: center;float:left;background-image: url(assets/medium-logo.png);
+	}
+	#navbar-2{
+		width:87%;float:left;
+
+	}
+	.row.wrapper{
+		position: fixed;/*absolute*/
+		visibility: visible;/*hidden*/
+		width:100%;
+		z-index: 2;
+		top:0;
+		box-shadow: 0px 5px 10px #888888;
+		background-color: white;
+	}
+	/*top stories*/
 	[class*="top-story-col-"] {
 	float:left;	
 	}
@@ -384,7 +477,6 @@ footer span{
 	.top-story{
 		height: 30vw;
 		margin-top: 0.5em;
-		border:1px solid blue;
 		position: relative;
 	}
 	#top-tech{
@@ -407,6 +499,9 @@ footer span{
 		color: black;
 		margin-top: 1em;
 	}
+	.article-name:hover{
+		color: #FF4422;
+	}
 	.article-author{
 		font-size: 10px;
 		color: grey;
@@ -418,9 +513,6 @@ footer span{
 		clear: initial;
 		width: 30%;
 		float: left;
-		/*margin-right: 1.5em;*/
-		/*margin-bottom: 1.5em;*/
-		border: 1px solid red;
 	}
 	.b img{
 		width: 100%;
@@ -446,38 +538,29 @@ footer span{
 	}
 	.col-md-1{
 		width: 8.333%;
-		background-color: pink;
 	}
 	.col-md-4{
 		width: 33.333%;
-		background-color: yellow;
 	}
 	.col-md-6{
 		width: 50%;
-		background-color: red;
 	}
 	.col-md-8{
 		width: 66.667%;
-		background-color: purple;
 	}
 	.col-md-12{
 		width: 100%;
-		background-color: orange;
 	}
 	/*latest funding*/
 	#latest-funding [class*="col-md"]{
-		border: 1px solid green;
 		height: 40vw;
 	}
 	/*topics*/
 	.topic.col-md-6{
-		background-color: black;
 		min-height: 750px;
-
 	}
 	.square{
 		position:relative;
-		background: blue;
 		height: 40%;
 	}
 	/*latest deals*/
@@ -507,6 +590,13 @@ footer span{
 	}
 	#top-tech{
 		height: 31vw;
+		/*Safari 5.1 to 6.0*/
+		background: -webkit-linear-gradient(to bottom right, rgb(255,0,0,0.9),rgba(0,0,0,0.5)), url("assets/main-pic.jpg");
+		/*Opera 11.1 to 12.0*/
+		background: -o-linear-gradient(to bottom right, rgb(255,0,0,0.9),rgba(0,0,0,0.5)), url("assets/main-pic.jpg");
+		/*Firefox 3.6 to 15*/
+		background: -moz-linear-gradient(to bottom right, rgb(255,0,0,0.9),rgba(0,0,0,0.5)), url("assets/main-pic.jpg");
+		/*Standard syntax(must be last)*/
 		background: linear-gradient(to bottom right, rgb(255,0,0,0.9),rgba(0,0,0,0.5)), url("assets/main-pic.jpg");
 		background-size: cover;
 		background-position: center;
@@ -542,9 +632,6 @@ footer span{
 		clear: initial;
 		width: 30%;
 		float: left;
-		/*margin-right: 1.5em;*/
-		/*margin-bottom: 1.5em;*/
-		border: 1px solid red;
 	}
 	.b img{
 		width: 100%;
@@ -570,39 +657,31 @@ footer span{
 	}
 	.col-lg-3{
 		width: 25%;
-		background-color: pink;
 	}
 	.col-lg-4{
 		width: 33.333%;
-		background-color: yellow;
 	}
 	.col-lg-6{
 		width: 50%;
-		background-color: red;
 	}
 	.col-lg-8{
 		width: 66.667%;
-		background-color: purple;
 	}
 	.col-lg-12{
 		width: 100%;
-		background-color: orange;
 	}
 	/*latest funding*/
 	#latest-funding [class*="col-md"]{
-		border: 1px solid green;
 		height: 30vw;
 		line-height: 1.5em;
 	}
 	/*topics*/
 	.topic.col-md-6{
-		background-color: black;
 		min-height: 750px;
 
 	}
 	.square{
 		position:relative;
-		background: blue;
 		height: 40%;
 	}
 	/*latest deals*/
@@ -619,6 +698,14 @@ footer span{
 		padding: 0.5em;
 		float: left;
 		height: 30vh;
+	}
+	/*get rid of logo in navbar*/
+	#navbar2-logo{
+		position: absolute;
+		visibility: hidden;
+	}
+	#navbar-2{
+		width: 100%;
 	}
 }
 @media screen and (min-device-width: 1920px){
@@ -670,9 +757,6 @@ footer span{
 		clear: initial;
 		width: 30%;
 		float: left;
-		/*margin-right: 1.5em;*/
-		/*margin-bottom: 1.5em;*/
-		border: 1px solid red;
 	}
 	.b img{
 		width: 100%;
@@ -698,39 +782,34 @@ footer span{
 	}
 	.col-lg-3{
 		width: 25%;
-		background-color: pink;
 	}
 	.col-lg-4{
 		width: 33.333%;
-		background-color: yellow;
 	}
 	.col-lg-6{
 		width: 50%;
-		background-color: red;
+	 
 	}
 	.col-lg-8{
 		width: 66.667%;
-		background-color: purple;
+		 
 	}
 	.col-lg-12{
 		width: 100%;
-		background-color: orange;
+		 
 	}
 	/*latest funding*/
 	#latest-funding [class*="col-md"]{
-		border: 1px solid green;
 		height: 30vw;
 		line-height: 1.5em;
 	}
 	/*topics*/
 	.topic.col-md-6{
-		background-color: black;
 		min-height: 750px;
 
 	}
 	.square{
 		position:relative;
-		background: blue;
 		height: 40%;
 	}
 	/*latest deals*/
