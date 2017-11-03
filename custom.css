@@ -390,7 +390,7 @@ footer span{
 }
 /*navbar*/
 
-@media screen and (min-device-width: 768px){
+@media screen and (min-width: 768px){
 
 	/*navbar2*/
 	#navbar{
@@ -568,7 +568,7 @@ footer span{
 		padding-bottom: 1em;
 	}
 }
-@media screen and (min-device-width: 1042px){
+@media screen and (min-width: 1042px){
 	#top-tech #logo{
 		position: absolute; font-size: 120px; font-family: 'Monoton',Times;padding-left: 20px;font-weight: medium; color: white;visibility: visible;
 	}
@@ -708,7 +708,7 @@ footer span{
 		width: 100%;
 	}
 }
-@media screen and (min-device-width: 1920px){
+@media screen and (min-width: 1920px){
 	[class*="top-story-col-"] {
 	float:left;	
 	}
@@ -828,7 +828,7 @@ footer span{
 		height: 30vh;
 	}
 }
-@media screen and (max-device-width: 320px){
+@media screen and (max-width: 320px){
 	.top-right{
 		padding-bottom: 1.5em;
 	}
